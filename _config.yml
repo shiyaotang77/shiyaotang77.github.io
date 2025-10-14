@@ -1,0 +1,37 @@
+title: "Shiyao Tang"
+name: "Shiyao Tang"
+email: "shiyaothea0607@ucla.edu"
+description: "Transportation Systems · Network Modeling · Intelligent Mobility"
+url: "https://shiyaotang77.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+minimal_mistakes_skin: "default"
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+include:
+  - _pages
+  - _includes/head/custom.html
+
+author:
+  name   : "Shiyao Tang"
+  avatar : "/images/profile.jpg"
+  bio    : "Graduate Student, UCLA"
+  location: "Los Angeles, CA"
+  email  : "shiyaothea0607@ucla.edu"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/shiyaotang77"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/shiyaothea0607/"
