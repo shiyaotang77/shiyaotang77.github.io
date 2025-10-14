@@ -1,4 +1,0 @@
-:root{ --text:#1f2937; }
-.page__content, .archive { font-size: 16.5px; line-height: 1.85; }
-.page__content ul{ list-style: none; padding-left: 0; }
-.page__content li{ margin: .25rem 0; }
