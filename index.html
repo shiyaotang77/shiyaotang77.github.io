@@ -74,21 +74,91 @@
         <li><strong>Methods:</strong> Discrete choice modeling, convex optimization, graph-based learning, reinforcement learning</li>
       </ul>
       <h3 style="font-size:0.95rem; font-weight:600; margin:1rem 0 0.5rem;">Projects</h3>
-      <ul>
-        <li><strong>Network Topology &amp; Travel Behavior Modeling</strong> — Predicting trip distance distributions and OD patterns via network embeddings.</li>
-        <li><strong>EEG‑based Driver State Detection</strong> — Adaptive test‑time learning for fatigue recognition (IEEE T‑ITS submission).</li>
-        <li><strong>AI‑based Path Planning</strong> — Robotics navigation and behavioral decision systems.</li>
-        <li><strong>MaxEnt Route Choice Validation</strong> — LA corridor validation via maximum entropy route choice with PeMS (VDS) and LA-Sim network.</li>
-        <li><strong>PD-MUSE</strong> — Primal-dual maximum-utility structured estimator with entropy regularization and moment constraints for logit-family discrete choice models.</li>
-      </ul>
+      <div class="research-grid">
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">PD-MUSE</div>
+              <div class="card-tagline">Primal–dual maximum-utility structured estimator for logit-family discrete choice models</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>PD-MUSE is a convex primal–dual framework for estimating multinomial, nested, and cross-nested logit models. It replaces the classical maximum likelihood objective with entropy regularization and moment constraints, recovering utility parameters and choice probabilities simultaneously. This is a series of two works:</p>
+            <p style="margin-top:4px"><strong>Methodology (Meena*, Tang, Kim):</strong> Develops the bi-level and one-shot formulations for MNL, NL, and IPDL. Establishes the exact MLE equivalence for MNL and the score decomposition for structured models. Target: TR Part B.</p>
+            <p style="margin-top:4px"><strong>Empirical application (Tang*, Kim):</strong> Applies PD-MUSE to UCLA Mobility SPRP data for travel demand estimation in Los Angeles. Target: TR Part A.</p>
+            <img class="card-img" src="images/research/pd-muse.png" alt="PD-MUSE framework overview" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">MaxEnt Route Choice Validation</div>
+              <div class="card-tagline">Joint travel choice and network equilibrium in Los Angeles</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This project builds a unified convex formulation that integrates destination choice (MNL), mode choice (nested logit), and route choice (path-size logit) with Beckmann-style network congestion. Using the LA-Sim network and PeMS vehicle detector station data, the framework jointly estimates demand parameters and predicts link flows in a single estimate-then-predict pipeline, validated against observed hourly flow profiles on LA corridors.</p>
+            <img class="card-img" src="images/research/la-demand.png" alt="Joint travel choice and network equilibrium framework" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">EEG-based Driver State Detection</div>
+              <div class="card-tagline">Adaptive test-time learning for cross-domain fatigue recognition</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This work tackles the cross-subject distribution shift in EEG-based fatigue detection by introducing a retained-adaptive test-time adaptation module. A memory bank stores source-domain prototypes and computes sample-wise similarity to modulate learning rates at inference. A contribution assessment module fuses EEG and EOG predictions with reliability-weighted scoring, achieving state-of-the-art accuracy across the SEED-VIG benchmark without target-domain labels. Submitted to IEEE T-ITS.</p>
+            <img class="card-img" src="images/research/eeg.png" alt="EEG driver fatigue detection architecture" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">Network Topology &amp; Travel Behavior Modeling</div>
+              <div class="card-tagline">Predicting trip distance distributions and OD patterns via network embeddings</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This undergraduate thesis project investigates how road network topology shapes travel demand. Using graph embedding techniques on urban networks in China and the Netherlands, the method extracts structural features that predict trip distance distributions (ToD) and origin-destination patterns without requiring full travel survey data, leveraging the inherent geometry and connectivity of transportation networks.</p>
+            <img class="card-img" src="images/research/network-topo.png" alt="Network topology and travel behavior modeling" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">AI-based Path Planning</div>
+              <div class="card-tagline">Robotics navigation and behavioral decision systems</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>A collaborative project with Cambridge University exploring AI-driven path planning for autonomous robotics. The work applies reinforcement learning and behavioral decision models to navigation tasks, bridging transportation choice theory with robotic motion planning in complex environments.</p>
+            <img class="card-img" src="images/research/path-planning.png" alt="AI-based path planning" />
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <section id="publications" class="block">
       <h2>Publications</h2>
       <h3 style="font-size:0.95rem; font-weight:600; margin:0.2rem 0 0.5rem;">Journal Papers</h3>
       <ul>
-        <li>Tang, S., &amp; Kim, Y. "LA Corridor Validation via MaxEnt Route Choice with PeMS (VDS) and LA-Sim Network." <em>Manuscript in preparation; target: Transportation Research Part B.</em></li>
-        <li>Tang, S., Ji, K. Y., Bills, T., &amp; Kim, Y. "PD-MUSE: Primal-Dual Maximum-Utility Structured Estimator with Entropy Regularization and Moment Constraints." <em>Manuscript in preparation; target: Transportation Research Part A.</em></li>
+        <li><strong>Tang, S.</strong>, &amp; Zhou, X. "Adaptive Test-Time Learning for Driver Fatigue Detection." <em>IEEE Transactions on Intelligent Transportation Systems</em>, major revision. <strong>[Major Revision]</strong></li>
+        <li>Meena, K. K.*, <strong>Tang, S.</strong>, &amp; Kim, Y. "PD-MUSE: Primal-Dual Maximum-Utility Structured Estimator for Discrete Choice Models." <em>Manuscript in preparation; target: Transportation Research Part B.</em></li>
+        <li><strong>Tang, S.*</strong>, &amp; Kim, Y. "PD-MUSE: Empirical Application with UCLA Mobility SPRP Data." <em>Manuscript in preparation; target: Transportation Research Part A.</em></li>
+        <li><strong>Tang, S.</strong>, &amp; Kim, Y. "LA Corridor Validation via MaxEnt Route Choice with PeMS (VDS) and LA-Sim Network." <em>Manuscript in preparation; target: Transportation Research Part B.</em></li>
       </ul>
       <h3 style="font-size:0.95rem; font-weight:600; margin:1rem 0 0.5rem;">Conference Papers</h3>
       <ul>
