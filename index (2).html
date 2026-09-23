@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shiyao Tang</title>
+  <meta name="description" content="Shiyao Tang — Transportation Systems | Network Modeling | Intelligent Mobility" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top">Shiyao Tang</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+      <a class="cv" href="assets/two_page_CV_ShiyaoTang.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container two-col" id="top">
+  <aside class="sidebar">
+    <img class="avatar" src="assets/profile.jpg" alt="Portrait of Shiyao Tang" />
+    <div class="name">Shiyao Tang</div>
+    <div class="role">Graduate Student, UCLA</div>
+    <ul class="contactlist">
+      <li><span class="icon">📍</span> Los Angeles, CA</li>
+      <li><span class="icon">✉️</span> <a href="mailto:shiyaothea0607@ucla.edu">shiyaothea0607@ucla.edu</a></li>
+      <li><span class="icon">𝑔</span> <a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
+      <li><span class="icon">🆔</span> <a href="#" target="_blank" rel="noopener">ORCID</a></li>
+      <li><span class="icon">🐙</span> <a href="https://github.com/shiyaotang77" target="_blank" rel="noopener">GitHub</a></li>
+      <li><span class="icon">in</span> <a href="https://www.linkedin.com/in/shiyaothea0607/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <a class="cvbtn" href="assets/two_page_CV_ShiyaoTang.pdf" target="_blank" rel="noopener">Open CV</a>
+  </aside>
+
+  <section class="content">
+    <section id="about" class="block">
+      <h1>About</h1>
+      <p>I am a transportation engineering researcher with international academic training and hands-on project experience. My undergraduate journey at Beijing Jiaotong University and Delft University of Technology, advised by Prof. Yonglei Jiang and Prof. Irene Martinez, provided a strong foundation in transportation systems, network modeling, and data-driven analysis. My undergraduate thesis focused on leveraging network topology to predict trip distance distributions (ToD) across China and the Netherlands.</p>
+      <p>I have led and contributed to projects at the intersection of graph neural networks, intelligent transportation systems, and human-centered mobility, including:</p>
+      <ul>
+        <li>Driver fatigue detection via EEG-based deep learning with adaptive test-time learning, submitted to IEEE T-ITS, collaborated with the Nanyang Technological University.</li>
+        <li>Freight train image recognition at UC Irvine, improving night-time detection accuracy with GIS signal integration.</li>
+        <li>AI-based robotics navigation and path planning at Cambridge University.</li>
+      </ul>
+      <p>My experience extends beyond academia. At the Western China Internet of Vehicles and China Merchants Smart City Institute, I worked on vehicle–road–cloud integration, white papers, and large scale urban mobility demonstrations which strengthened my ability to bridge research with practice.</p>
+      <p>Currently, I am pursuing my MS in Civil &amp; Environmental Engineering at UCLA, advised by <a href="https://sites.google.com/cornell.edu/youngseokim" target="_blank" rel="noopener">Prof. Youngseo Kim</a>. My research focuses on solving design and operational challenges in complex, interconnected transportation and logistics systems, with a special emphasis on human behavior and decision making.</p>
+    </section>
+
+    <section id="education" class="block">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of California, Los Angeles (UCLA)</strong> — M.S. in Civil &amp; Environmental Engineering (Transportation), 2025– (advised by <a href="https://sites.google.com/cornell.edu/youngseokim" target="_blank" rel="noopener">Prof. Youngseo Kim</a>)</li>
+        <li><strong>Beijing Jiaotong University (BJTU)</strong> — B.Eng. in Traffic &amp; Transportation, GPA 3.77/4.0 (WES 3.83)</li>
+        <li><strong>Delft University of Technology (TU Delft)</strong> — Visiting research under Prof. Irene Martínez</li>
+        <li><strong>University of California, Irvine (UCI)</strong> — Exchange program, GPA 4.0/4.0</li>
+        <li><strong>The Hong Kong Polytechnic University (PolyU)</strong> — Exchange student, GPA 4.0/4.0</li>
+      </ul>
+    </section>
+
+    <section id="research" class="block">
+      <h2>Research</h2>
+      <h3 style="font-size:0.95rem; font-weight:600; margin:0.2rem 0 0.5rem;">Interests</h3>
+      <ul>
+        <li><strong>Topics:</strong> Transportation demand modeling, travel behavior, network optimization, smart mobility systems</li>
+        <li><strong>Methods:</strong> Discrete choice modeling, convex optimization, graph-based learning, reinforcement learning</li>
+      </ul>
+      <h3 style="font-size:0.95rem; font-weight:600; margin:1rem 0 0.5rem;">Projects</h3>
+      <div class="research-grid">
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">PD-MUSE</div>
+              <div class="card-tagline">Primal–dual maximum-utility structured estimator for logit-family discrete choice models</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>PD-MUSE is a convex primal–dual framework for estimating multinomial, nested, and cross-nested logit models. It replaces the classical maximum likelihood objective with entropy regularization and moment constraints, recovering utility parameters and choice probabilities simultaneously. This is a series of two works:</p>
+            <p style="margin-top:4px"><strong>Methodology (Meena*, Tang, Kim):</strong> Develops the bi-level and one-shot formulations for MNL, NL, and IPDL. Establishes the exact MLE equivalence for MNL and the score decomposition for structured models. Target: TR Part B.</p>
+            <p style="margin-top:4px"><strong>Empirical application (Tang*, Kim):</strong> Applies PD-MUSE to UCLA Mobility SPRP data for travel demand estimation in Los Angeles. Target: TR Part A.</p>
+            <img class="card-img" src="images/research/pd-muse.png" alt="PD-MUSE framework overview" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">MaxEnt Route Choice Validation</div>
+              <div class="card-tagline">Joint travel choice and network equilibrium in Los Angeles</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This project builds a unified convex formulation that integrates destination choice (MNL), mode choice (nested logit), and route choice (path-size logit) with Beckmann-style network congestion. Using the LA-Sim network and PeMS vehicle detector station data, the framework jointly estimates demand parameters and predicts link flows in a single estimate-then-predict pipeline, validated against observed hourly flow profiles on LA corridors.</p>
+            <img class="card-img" src="images/research/la-demand.png" alt="Joint travel choice and network equilibrium framework" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">EEG-based Driver State Detection</div>
+              <div class="card-tagline">Adaptive test-time learning for cross-domain fatigue recognition</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This work tackles the cross-subject distribution shift in EEG-based fatigue detection by introducing a retained-adaptive test-time adaptation module. A memory bank stores source-domain prototypes and computes sample-wise similarity to modulate learning rates at inference. A contribution assessment module fuses EEG and EOG predictions with reliability-weighted scoring, achieving state-of-the-art accuracy across the SEED-VIG benchmark without target-domain labels. Submitted to IEEE T-ITS.</p>
+            <img class="card-img" src="images/research/eeg.png" alt="EEG driver fatigue detection architecture" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">Network Topology &amp; Travel Behavior Modeling</div>
+              <div class="card-tagline">Predicting trip distance distributions and OD patterns via network embeddings</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>This undergraduate thesis project investigates how road network topology shapes travel demand. Using graph embedding techniques on urban networks in China and the Netherlands, the method extracts structural features that predict trip distance distributions (ToD) and origin-destination patterns without requiring full travel survey data, leveraging the inherent geometry and connectivity of transportation networks.</p>
+            <img class="card-img" src="images/research/network-topo.png" alt="Network topology and travel behavior modeling" />
+          </div>
+        </div>
+
+        <div class="research-card" onclick="this.classList.toggle('open')">
+          <div class="card-header">
+            <span class="card-arrow">›</span>
+            <div>
+              <div class="card-title">AI-based Path Planning</div>
+              <div class="card-tagline">Robotics navigation and behavioral decision systems</div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>A collaborative project with Cambridge University exploring AI-driven path planning for autonomous robotics. The work applies reinforcement learning and behavioral decision models to navigation tasks, bridging transportation choice theory with robotic motion planning in complex environments.</p>
+            <img class="card-img" src="images/research/path-planning.png" alt="AI-based path planning" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="publications" class="block">
+      <h2>Publications</h2>
+      <h3 style="font-size:0.95rem; font-weight:600; margin:0.2rem 0 0.5rem;">Journal Papers</h3>
+      <ul>
+        <li><strong>Tang, S.</strong>, &amp; Zhou, X. "Adaptive Test-Time Learning for Driver Fatigue Detection." <em>IEEE Transactions on Intelligent Transportation Systems</em>, major revision. <strong>[Major Revision]</strong></li>
+        <li>Meena, K. K.*, <strong>Tang, S.</strong>, &amp; Kim, Y. "PD-MUSE: Primal-Dual Maximum-Utility Structured Estimator for Discrete Choice Models." <em>Manuscript in preparation; target: Transportation Research Part B.</em></li>
+        <li><strong>Tang, S.*</strong>, &amp; Kim, Y. "PD-MUSE: Empirical Application with UCLA Mobility SPRP Data." <em>Manuscript in preparation; target: Transportation Research Part A.</em></li>
+        <li><strong>Tang, S.</strong>, &amp; Kim, Y. "LA Corridor Validation via MaxEnt Route Choice with PeMS (VDS) and LA-Sim Network." <em>Manuscript in preparation; target: Transportation Research Part B.</em></li>
+      </ul>
+      <h3 style="font-size:0.95rem; font-weight:600; margin:1rem 0 0.5rem;">Conference Papers</h3>
+      <ul>
+        <li>Tang, S. "Review on Short-term Traffic Flow Prediction Methods Under Big Data." <em>International Conference on Mechatronics and Smart Systems</em>, 2023.</li>
+      </ul>
+      <h3 style="font-size:0.95rem; font-weight:600; margin:1rem 0 0.5rem;">Presentations</h3>
+      <ul>
+        <li>Tang, S. "PD-MUSE: Primal–Dual Maximum-Utility Structured Estimator for Discrete Choice Models." Presentation, <em>2026 INFORMS Annual Meeting</em>, San Francisco, CA, November 1–4, 2026. <strong>[Upcoming]</strong></li>
+        <li>Tang, S. "Convex Reformulations for Logit-Family Choice Models: A Primal–Dual Estimator and Open-Source Implementation." Talk, <em>The Fourth ITS Irvine Symposium on Emerging Research in Transportation</em>, UC Irvine, 2026.</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="block">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Graduate Research Assistant</strong>, UC Institute of Transportation Studies (UC ITS) — CalTranPlanner: California Transportation Planning Tool for Statewide Data-Driven Optimization (Oct. 2025–Sept. 2026)</li>
+        <li>Cloud Control Technology Intern, Western China Internet of Vehicles — Chongqing Intelligent Networked NEV Demonstration Zone project.</li>
+        <li>Vehicle‑Road Coordination R&amp;D Intern, China Merchants Chongqing — Project plans, white papers, and smart city integration.</li>
+      </ul>
+    </section>
+
+    <section id="awards" class="block">
+      <h2>Awards</h2>
+      <ul>
+        <li>Best Diplomatic Presence Award — 2023 Model APEC</li>
+        <li>Beijing Municipal Second Prize — Internet+ Innovation &amp; Entrepreneurship</li>
+        <li>First Prize — 21st Century Cup National English Speaking Competition (Top 5% at BJTU)</li>
+        <li>First Prize — BJTU Innovation &amp; Entrepreneurship Qualification Trials</li>
+        <li>School Class Scholarship for Academic Excellence, First Prize (top 1%)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="block">
+      <h2>Contact</h2>
+      <p>For collaboration or questions, feel free to reach out via <a href="mailto:shiyaothea0607@ucla.edu">email</a> or <a href="https://www.linkedin.com/in/shiyaothea0607/" target="_blank" rel="noopener">LinkedIn</a>. Full CV available <a href="assets/two_page_CV_ShiyaoTang.pdf" target="_blank" rel="noopener">here</a>.</p>
+    </section>
+  </section>
+</main>
+</body>
+</html>
