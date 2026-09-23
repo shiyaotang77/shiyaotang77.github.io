@@ -32,6 +32,20 @@ h1{font-size:1.6rem;margin:0 0 8px 0}
 h2{font-size:1.25rem;margin:18px 0 6px 0}
 ul{margin:0;padding-left:20px}
 p{margin:.4rem 0 1rem 0}
+/* Research cards */
+.research-grid{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.research-card{border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;transition:border-color .2s}
+.research-card:hover{border-color:#b0b8c4}
+.card-header{display:flex;align-items:flex-start;gap:10px;padding:14px 16px}
+.card-arrow{font-size:1.2rem;font-weight:700;color:var(--muted);transition:transform .25s;flex-shrink:0;margin-top:1px;line-height:1}
+.research-card.open .card-arrow{transform:rotate(90deg)}
+.card-title{font-weight:700;font-size:.98rem}
+.card-tagline{color:var(--muted);font-size:.88rem;margin-top:2px;line-height:1.4}
+.card-body{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;padding:0 16px}
+.research-card.open .card-body{max-height:1200px;padding:0 16px 18px}
+.card-body p{font-size:.92rem;line-height:1.7;margin:0 0 14px 0;color:var(--text)}
+.card-img{width:100%;border-radius:8px;border:1px solid var(--line);display:block}
+
 @media (max-width:860px){
   .two-col{grid-template-columns:1fr}
   .sidebar{position:relative;top:auto}
